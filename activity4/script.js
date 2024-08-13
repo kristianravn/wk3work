@@ -1,8 +1,10 @@
-const xCoord = document.getElementById('xCoord');
-const yCoord = document.getElementById('yCoord');
 
-let doc = document.getElementById('click', (event) =>{
+
+document.addEventListener('click', function(event) {
    
-    xCoordcoord.textContent = event.clientX
-    yCoordcoord.textContent = event.clientY
-})
+    const x = event.clientX;
+    const y = event.clientY;
+
+    document.getElementById('xCoord').textContent = `X Coordinate: ${x}`;
+    document.getElementById('yCoord').textContent = `Y Coordinate: ${y}`;
+});

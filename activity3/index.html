@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity 4</title>
+</head>
+<body>
+    <h1 id="title">Change My Color!</h1>
+    <input type="text" id="colorInput" placeholder="Enter a color">
+    <button onclick="changeTitleColor()">Change Color</button>
+
+    <script>
+        function changeTitleColor() {
+            var color = document.getElementById("colorInput").value;
+            document.getElementById("title").style.color = color;
+        }
+    </script>
+</body>
+</html>
